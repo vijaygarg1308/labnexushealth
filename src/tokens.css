@@ -1,0 +1,143 @@
+/* CareDiagnostics — Design Tokens
+ * Dark espresso + warm amber + sage. Light theme is a desaturated mirror.
+ * Tweaks live on :root via data-theme + data-density + data-cards + data-typeset
+ */
+
+:root {
+  /* ---------- Dark (default) ---------- */
+  --bg:           #0E0C0A;
+  --surface-1:    #161310;
+  --surface-2:    #1F1A15;
+  --surface-3:    #2A241D;
+  --surface-hi:   #322B22;
+
+  --border:        rgba(245, 232, 211, 0.06);
+  --border-strong: rgba(245, 232, 211, 0.12);
+  --hairline:      rgba(245, 232, 211, 0.04);
+
+  --text-1: #F4ECDF;
+  --text-2: #A89F92;
+  --text-3: #6F6759;
+
+  --primary:        #E89766;
+  --primary-hi:     #F2A777;
+  --primary-soft:   rgba(232, 151, 102, 0.12);
+  --primary-strong: rgba(232, 151, 102, 0.22);
+  --on-primary:     #1A1108;
+
+  --sage:        #9FC8B7;
+  --sage-soft:   rgba(159, 200, 183, 0.12);
+  --blue:        #8FB4D1;
+  --blue-soft:   rgba(143, 180, 209, 0.12);
+
+  --success:     #7EBE9D;
+  --warning:     #E8C56A;
+  --danger:      #E07A6E;
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.35);
+  --shadow-md: 0 4px 14px rgba(0,0,0,0.30), 0 1px 2px rgba(0,0,0,0.25);
+  --shadow-lg: 0 18px 40px rgba(0,0,0,0.45), 0 4px 10px rgba(0,0,0,0.25);
+
+  /* density (cozy default) */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  --pad-card:    18px;
+  --pad-screen:  20px;
+  --gap-stack:   14px;
+  --row-h:       56px;
+  --tap:         44px;
+
+  /* typography */
+  --font-sans: 'Geist', ui-sans-serif, system-ui, -apple-system, 'SF Pro Text', sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-display: 'Geist', ui-sans-serif, system-ui;
+
+  --t-display:  34px;
+  --t-h1:       26px;
+  --t-h2:       20px;
+  --t-h3:       17px;
+  --t-body:     15px;
+  --t-small:    13px;
+  --t-micro:    11px;
+
+  --lh-tight:   1.08;
+  --lh-snug:    1.25;
+  --lh-normal:  1.45;
+  --tk-tight:   -0.02em;
+  --tk-snug:    -0.012em;
+}
+
+/* ---------- Light theme ---------- */
+:root[data-theme="light"] {
+  --bg:           #FAF6EF;
+  --surface-1:    #FFFFFF;
+  --surface-2:    #F3ECE0;
+  --surface-3:    #EADFCC;
+  --surface-hi:   #E1D4BB;
+
+  --border:        rgba(26, 17, 8, 0.08);
+  --border-strong: rgba(26, 17, 8, 0.16);
+  --hairline:      rgba(26, 17, 8, 0.05);
+
+  --text-1: #1A1108;
+  --text-2: #5E5246;
+  --text-3: #8C8073;
+
+  --primary:        #B85A2E;
+  --primary-hi:     #C8693A;
+  --primary-soft:   rgba(184, 90, 46, 0.10);
+  --primary-strong: rgba(184, 90, 46, 0.18);
+  --on-primary:     #FFFFFF;
+
+  --sage:        #4E8C79;
+  --sage-soft:   rgba(78, 140, 121, 0.10);
+  --blue:        #426F94;
+  --blue-soft:   rgba(66, 111, 148, 0.10);
+
+  --success:     #4E8C79;
+  --warning:     #B07F22;
+  --danger:      #C25040;
+
+  --shadow-sm: 0 1px 2px rgba(60, 36, 12, 0.05);
+  --shadow-md: 0 4px 14px rgba(60, 36, 12, 0.08), 0 1px 2px rgba(60, 36, 12, 0.04);
+  --shadow-lg: 0 18px 40px rgba(60, 36, 12, 0.12), 0 4px 10px rgba(60, 36, 12, 0.06);
+}
+
+/* ---------- Density ---------- */
+:root[data-density="compact"] {
+  --pad-card: 14px;
+  --pad-screen: 16px;
+  --gap-stack: 10px;
+  --row-h: 48px;
+}
+
+/* ---------- Card style ---------- */
+:root[data-cards="flat"] {
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+}
+
+/* ---------- Type pairings ---------- */
+:root[data-typeset="geist"]      { --font-sans: 'Geist', system-ui, sans-serif; --font-mono: 'Geist Mono', monospace; --font-display: 'Geist', system-ui; }
+:root[data-typeset="inter"]      { --font-sans: 'Inter Tight', system-ui, sans-serif; --font-mono: 'JetBrains Mono', monospace; --font-display: 'Inter Tight', system-ui; }
+:root[data-typeset="jakarta"]    { --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif; --font-mono: 'JetBrains Mono', monospace; --font-display: 'Plus Jakarta Sans', system-ui; }
+:root[data-typeset="editorial"]  { --font-sans: 'Inter Tight', system-ui, sans-serif; --font-mono: 'JetBrains Mono', monospace; --font-display: 'Instrument Serif', Georgia, serif; }
+
+/* ---------- Resets inside screens ---------- */
+.cd-screen { font-family: var(--font-sans); color: var(--text-1); background: var(--bg); -webkit-font-smoothing: antialiased; }
+.cd-screen *, .cd-screen *::before, .cd-screen *::after { box-sizing: border-box; }
+.cd-screen button { font-family: inherit; }
+
+.mono { font-family: var(--font-mono); font-feature-settings: "tnum" 1, "ss01" 1; }
+.tnum { font-feature-settings: "tnum" 1; }
+.serif-disp { font-family: var(--font-display); }
+
+/* Scrollbar polish inside the device */
+.cd-scroll::-webkit-scrollbar { width: 0; height: 0; }
+.cd-scroll { scrollbar-width: none; }
