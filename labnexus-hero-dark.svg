@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="Sora, system-ui, sans-serif">
+  <defs><radialGradient id="bg" cx="50%" cy="0%" r="120%"><stop offset="0%" stop-color="#141A2B"/><stop offset="60%" stop-color="#0C0F18"/></radialGradient></defs>
+  <rect x="1" y="1" width="998" height="558" rx="20" fill="url(#bg)" stroke="#ffffff" stroke-opacity="0.07"/>
+  <svg x="412" y="86" width="176" height="176" viewBox="0 0 200 200" fill="none" overflow="visible">
+  <defs><filter id="gH" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+  <g>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.015;0.95;1" dur="3.4s" repeatCount="indefinite"/>
+    <path d="M180 100 L140 169.28 L60 169.28 L20 100 L60 30.72 L140 30.72 Z" stroke="#9FB0D8" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" opacity="0.92" stroke-dasharray="480"><animate attributeName="stroke-dashoffset" values="480;0;0" keyTimes="0;0.235;1" dur="3.4s" repeatCount="indefinite"/></path>
+    <path id="aH" d="M100 100 L100 50" stroke="#7C8CFF" stroke-width="2.4" stroke-linecap="round" opacity="0.55" stroke-dasharray="50"><animate attributeName="stroke-dashoffset" values="50;50;0;0" keyTimes="0;0.412;0.47;1" dur="3.4s" repeatCount="indefinite"/></path>
+    <path id="bH" d="M100 100 L143.3 125" stroke="#7C8CFF" stroke-width="2.4" stroke-linecap="round" opacity="0.55" stroke-dasharray="50"><animate attributeName="stroke-dashoffset" values="50;50;0;0" keyTimes="0;0.47;0.529;1" dur="3.4s" repeatCount="indefinite"/></path>
+    <path id="cH" d="M100 100 L56.7 125" stroke="#7C8CFF" stroke-width="2.4" stroke-linecap="round" opacity="0.55" stroke-dasharray="50"><animate attributeName="stroke-dashoffset" values="50;50;0;0" keyTimes="0;0.529;0.588;1" dur="3.4s" repeatCount="indefinite"/></path>
+    <g transform="translate(100,50)"><circle r="6.5" fill="#7C8CFF" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.294;0.333;1" dur="3.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="scale" values="0.2;0.2;1;1" keyTimes="0;0.294;0.333;1" dur="3.4s" repeatCount="indefinite" additive="sum"/></circle></g>
+    <g transform="translate(143.3,125)"><circle r="6.5" fill="#7C8CFF" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.333;0.372;1" dur="3.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="scale" values="0.2;0.2;1;1" keyTimes="0;0.333;0.372;1" dur="3.4s" repeatCount="indefinite" additive="sum"/></circle></g>
+    <g transform="translate(56.7,125)"><circle r="6.5" fill="#7C8CFF" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.372;0.412;1" dur="3.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="scale" values="0.2;0.2;1;1" keyTimes="0;0.372;0.412;1" dur="3.4s" repeatCount="indefinite" additive="sum"/></circle></g>
+    <g transform="translate(100,100)">
+      <circle r="11" fill="none" stroke="#7C8CFF" stroke-width="1.4" opacity="0"><animate attributeName="opacity" values="0;0;0.28;0.28" keyTimes="0;0.235;0.294;1" dur="3.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="scale" values="0.2;0.2;1;1" keyTimes="0;0.235;0.294;1" dur="3.4s" repeatCount="indefinite" additive="sum"/></circle>
+      <circle r="8.5" fill="#7C8CFF" opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.235;0.294;1" dur="3.4s" repeatCount="indefinite"/><animateTransform attributeName="transform" type="scale" values="0.2;0.2;1;1" keyTimes="0;0.235;0.294;1" dur="3.4s" repeatCount="indefinite" additive="sum"/></circle>
+    </g>
+    <g filter="url(#gH)">
+      <circle r="3.2" fill="#CBD4FF" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.588;0.62;0.68;0.706;1" dur="3.4s" repeatCount="indefinite"/><animateMotion dur="3.4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.588;0.706;1" calcMode="linear"><mpath href="#aH"/></animateMotion></circle>
+      <circle r="3.2" fill="#CBD4FF" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.588;0.62;0.68;0.706;1" dur="3.4s" repeatCount="indefinite"/><animateMotion dur="3.4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.588;0.706;1" calcMode="linear"><mpath href="#bH"/></animateMotion></circle>
+      <circle r="3.2" fill="#CBD4FF" opacity="0"><animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.588;0.62;0.68;0.706;1" dur="3.4s" repeatCount="indefinite"/><animateMotion dur="3.4s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.588;0.706;1" calcMode="linear"><mpath href="#cH"/></animateMotion></circle>
+    </g>
+  </g>
+</svg>
+  <text x="500" y="372" text-anchor="middle" font-size="40" font-weight="600" letter-spacing="-0.8"><tspan fill="#EAEEF7">Lab</tspan><tspan fill="#8E9BFF">Nexus</tspan><tspan fill="#EAEEF7">Health</tspan></text>
+  <text x="500" y="424" text-anchor="middle" font-size="16" fill="#8A93A6">The operating system for connected diagnostics.</text>
+</svg>
